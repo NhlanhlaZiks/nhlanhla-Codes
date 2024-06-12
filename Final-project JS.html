@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coping with Anxiety</title>
+    <style>
+        body{
+            background-color:#f0f8ff ;
+        }
+      .anxiety{
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 10px 50px;
+        background: linear-gradient( #f0f8ff );
+      }
+      h1 {
+        text-align: center;
+        color: #d59bf6;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 400px;
+        border-radius: 3px;
+      }
+      h2 {
+        text-align: center;
+        color: #d59bf6;
+        font-size: 27px;
+        font-weight: 500px;
+      }
+      p {
+        text-align: justify;
+        line-height:1,4;
+        font-size: 18px;
+      }
+        .discover-more{
+            text-decoration: none;
+            color: #d59bf6;
+            font-size:15px ;
+            font-weight: bolder;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        button{
+         display: block;
+         margin: 15px auto; 
+         border:none;
+         background-color: #d59bf6; 
+         border-radius: 50px;
+         font-size: 16px;
+         padding: 16px 26px;
+         box-shadow:(251,208,245 0,3) ;
+         transition: all 150ms ease-in-out;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: #f0f8ff;
+            border: 1px solid #d59bf6;
+        }
+    </style>
+  </head>
+  <div class="anxiety">
+  <body>
+    <h1>STRUGGLING WITH ANXIETY?</h1>
+    <img
+      src=" https://s3.amazonaws.com/shecodesio-production/uploads/files/000/117/507/original/anxiety.png?1709549256"
+      alt="anxiety struggles"
+    />
+    <h2>Learning to manage anxiety</h2>
+    <p>
+      While experiencing some anxiety is normal, even healthy, when it
+      interferes with daily living then it is a problem which should be
+      addressed. By learning tools and strategies to reduce the amount of
+      anxiety you experience every day anxiety becomes less intrusive, and even
+      manageable.
+    </p>
+    <span>
+    <a
+      href="https://www.calmclinic.com/anxiety/how-to-ease-anxiety"
+      target="_blank"
+      class="discover-more"
+     >
+    <em>
+      Tips to help reduce yo.ur anxiety here.</em>
+    </a>
+    🙂
+    </span>
+    <br />
+    <p class="appointment">
+      If your anxiety is getting out of control ,Get proffesional help at an
+      affordable price.
+    </p>
+    <hr />
+    <button class ="book-button">Book now!</button>
+    </div>
+  <script>
+   function book() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let country = prompt("Which country do you live in?");
+        
+        if (country === "South Africa"){
+        alert(
+          "Thank you, " +
+            name +
+            "! We'll be in touch , take care😊 " 
+        );
+        } else {
+        alert(
+            "Sorry, " +
+             name + "! unfortunateley we only take South Africans for now😢"
+        );
+        }
+      }
+
+      let bookButton = document.querySelector(".book-button");
+      bookButton.addEventListener("click", book);
+  </script>
+  </body>
+</html>
